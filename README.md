@@ -5,9 +5,9 @@
 <span><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> </span>
 
 A palindrome is a word, number, phrase, or another sequence of characters that reads the same backward as forward, such as mom, noon, level or 121. 
-Live app ➡️ https://unitconverted.com
+Live app ➡️ https://maciejkuran.com/palindrome-checker
 
-## UI 
+## UI Design
 <p align="center">
 <img src="https://user-images.githubusercontent.com/103118542/171482363-166c79dc-28a0-42df-8ed1-2d208760a919.png">
 </p>

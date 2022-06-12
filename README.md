@@ -16,7 +16,7 @@ Live app ➡️ https://maciejkuran.com/palindrome-checker
 ## Javascript concepts
 There are a lot of Javascript concepts that could be used to solve this problem. However, I picked the ones that seemed to match the best – at least from my point of view.
 
-In the examples shown below, I do not access any DOM elements. These are just functions and the results will be logged to the console.
+In the examples shown below, I do not access any DOM elements. These are just pure functions and the results will be logged to the console.
 
 If you're interested in checking my application source code in which I do DOM manipulation, feel free to check the uploaded files.
 
@@ -24,9 +24,9 @@ If you're interested in checking my application source code in which I do DOM ma
 ## 1st concept – split(), reverse() and join() methods
 I developed this application using this concept. 
 
-This function takes one parameter – 'text'. I am converting the 'text' toLowerCase() and to a String() – just in case someone decides to check if certain numbers are the palindrome or types a string with lower case and upper case. In the result any input value (including numbers) will be converted to lower case and to a string.
+This function takes one parameter – 'text'. I am converting the 'text' toLowerCase() and to the String() – just in case someone decides to check if certain numbers are the palindrome or types a string with lower case and upper case. In the result any input value (including numbers) will be converted to lower case and to a string.
 
-As reverse() method doesn't work on strings, I am converting a string to array. Then I reverse the entire array and join() the values. I use ternary operator to log the result to the console.
+As the reverse() method doesn't work on strings, I am converting a string to an array. Then I reverse the array and join() values. I use the ternary operator to log the result to the console.
 
 ```
 const checkPalindrome = (text) => {
@@ -46,7 +46,7 @@ checkPalindrome('Mom');
 ```
 
 ## 2nd concept – for loop (optional)
-This concept may look a bit cleaner to you. I am looping through the string. The iteration starts from the end to the beginning of the string and will keep looping until the condition is true. In this case if i(index) >= 0.
+This concept may look a bit cleaner to you. I am looping through a string. The iteration starts from the end to the beginning of the string and will keep looping until the condition is true. In this case if i(index) >= 0.
 
 Each iteration's value (single letter) is saved to the 'newString' variable.
 

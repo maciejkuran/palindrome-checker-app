@@ -24,7 +24,7 @@ If you're interested in checking my application source code in which I do DOM ma
 ## 1st concept – split(), reverse() and join() methods
 I developed this application using this concept. 
 
-This function takes one parameter – 'text'. I am converting the 'text' toLowerCase() and to the String() – just in case someone decides to check if certain numbers are the palindrome or types a string with lower case and upper case. In the result any input value (including numbers) will be converted to lower case and to a string.
+This function takes one parameter – 'text'. I am converting the 'text' toLowerCase() and to the String() – just in case someone decides to check if certain numbers are the palindrome or types a string with lowercase and uppercase. In the result any input value (including numbers) will be converted to lowercase and to a string.
 
 As the reverse() method doesn't work on strings, I am converting a string to an array. Then I reverse the array and join() values. I use the ternary operator to log the result to the console.
 

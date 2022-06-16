@@ -13,8 +13,8 @@ Live app ➡️ https://maciejkuran.com/palindrome-checker
 </p>
 
 
-## Javascript concepts
-There are a lot of Javascript concepts that could be used to solve this problem. However, I picked the ones that seemed to match the best – at least from my point of view.
+## JavaScript concepts
+There are a lot of JavaScript concepts that could be used to solve this problem. However, I picked the ones that seemed to match the best – at least from my point of view.
 
 In the examples shown below, I do not access any DOM elements. These are just pure functions and the results will be logged to the console.
 

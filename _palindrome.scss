@@ -1,70 +1,98 @@
-.palindromContainer {
-  min-height: 80vh;
-}
-
-.palindromeH1Header {
-  color: #f4900b;
-}
-
-.palindromeThinkingFace {
+@mixin flexCenter() {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.palindromeSadFace {
-  @extend .palindromeThinkingFace;
-  display: none;
+.palindrome-header {
+  position: relative;
+  max-width: 80rem;
+  margin: 11rem 1rem 0 1rem;
+  background-color: var(--grey-background);
+  padding: 4rem;
+  border-radius: 5px;
+  border: 1px solid var(--grey-background-2);
+
+  h1 {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px var(--grey-tag-border);
+  }
 }
 
-.palindromeHappyFace {
-  @extend .palindromeSadFace;
-}
-
-.palindromeWrapper {
-  display: flex;
-  max-width: 30rem;
+.palindrome-app-container {
+  @include flexCenter();
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-}
+  margin: 2rem 1rem;
 
-.clearBtnWrapper {
-  max-width: 30rem;
+  .internal-wrapper {
+    @include flexCenter();
+    flex-direction: column;
+    max-width: 60rem;
 
-  display: flex;
-  justify-content: flex-end;
-  margin-left: auto;
-  margin-right: auto;
-
-  .palindromeClearBtn {
-    padding: 0.8rem;
-    font-size: 1rem;
-    margin-top: 1.2rem;
+    textarea {
+      width: 100%;
+    }
+    svg {
+      pointer-events: none;
+    }
   }
 }
 
-.palindromeCheckBtn {
-  display: flex;
+.palindrome-clear-btn {
+  margin-top: 0.2rem;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
+  padding: 0.2rem;
+  border-radius: 5px;
+  svg {
+    margin-left: 0.3rem;
+    font-size: 1.1rem;
+    color: red;
+  }
 }
 
-.palindromeOutput {
-  max-width: 30rem;
+.palindrome-clear-btn:hover {
+  background-color: var(--grey-background-2);
+}
+
+.palindrome-check-btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thanks-lottie {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  color: var(--grey-tag-border);
+}
+
+@media (max-width: 400.98px) {
+  .palindrome-header {
+    padding: 2rem;
+  }
+}
+
+.hide {
   display: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4rem;
-  color: var(--clr-green);
 }
 
-.palindromeFeatured {
-  font-size: 1.3rem;
-  a {
-    @extend .palindromeFeatured;
-    color: var(--clr-green);
+//Styles for 'Title case converter'
+.palindrome-app-container .internal-wrapper div {
+  display: flex;
+  margin-left: auto;
+
+  .titlecase-copy-btn {
+    margin-left: 1rem;
+
+    svg {
+      color: #23d5ab;
+    }
   }
 }
+
+.titlecase-output {
+  border-left: 2px solid rgb(91, 231, 116);
+  padding-left: 0.5rem;
+}
+//----------------------------------------------
